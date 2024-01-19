@@ -1,0 +1,26 @@
+{
+    "pong": {
+        "screen_width": 50,
+        "screen_height": 50,
+        "paddle_size": 10,
+        "paddle_speed": 7.5,
+        "ball_speed": 5
+    },
+    "brain": {
+        "input_size": 5,
+        "action_size": 3,
+        "hidden_layers": 2,
+        "hidden_size": [8, 8],
+        "skip_connections": true,
+        "mutation_rate": 0.01
+    },
+    "trainer" : {
+        "max_generations" : 100,
+        "population_size" : 100,
+        "death_rate" : 0.1,
+        "steps_per_game" : 500,
+        "debug" : false,
+        "save_path" : "models/pong.npy",
+        "load_path" : "models/pong.npy"
+    }
+}
